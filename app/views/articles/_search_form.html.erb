@@ -1,0 +1,11 @@
+<%= search_form_for @q do |f| %>
+    <%= f.label :title_cont, "Title :" %>
+    <%= f.search_field :title_cont, placeholder: "search....." %>
+    &nbsp;&nbsp;
+    <%= f.label :title_start, "Title start with :" %>
+    <%= f.search_field :title_start %>
+    &nbsp;&nbsp
+    <%= sort_link(@q, :title, "Order :") %>
+
+    <%= f.submit "search" %>
+<% end %>

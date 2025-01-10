@@ -1,0 +1,12 @@
+<h1>Welcome to Bookhub.com, <%= @user.name %></h1>
+<p>
+  You have successfully signed up to Bookhub.com,
+  your username is: <%= @user.name %>.<br>
+</p>
+<%= image_tag attachments["latter_A.jpg"].url, alt: "photo", class: "photos" %>
+<%# image_tag "Letter_A.jpg" %>
+<p>
+  To login to the site, just follow this link: <a href="<%= new_session_url %>">Log in</a>.
+</p>
+<p>Thanks for joining and have a great day!</p>
+
